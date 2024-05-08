@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kss.kssfooddroid.WSconsumirClientes">
+
+    <FrameLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:background="@color/color_LightSteelBlue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:text="RIF:"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|top"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/color_Negro" />
+
+        <EditText
+            android:layout_width="466dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWS_RIF"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Por RIF"
+            android:id="@+id/btnWS_RIF"
+            android:layout_gravity="right|top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Por Nombre"
+            android:id="@+id/btnWS_Nombre"
+            android:layout_gravity="right|bottom" />
+
+        <EditText
+            android:layout_width="458dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWS_Nombre"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:id="@+id/textView26"
+            android:layout_gravity="left|bottom"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_Negro"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:id="@+id/textView27"
+                android:layout_column="0"
+                android:gravity="right"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/WSlblNombre"
+                android:layout_column="2"
+                android:background="@color/color_LightSteelBlue" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RIF:"
+                android:id="@+id/textView29"
+                android:layout_column="0"
+                android:gravity="right"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34"
+                android:layout_column="1"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/WSlbl_RIF"
+                android:layout_column="2"
+                android:background="@color/color_LightSteelBlue"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/tableLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion:"
+                android:id="@+id/textView31"
+                android:layout_column="0"
+                android:gravity="right"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/WSlbl_Direccion"
+                android:layout_column="2"
+                android:background="@color/color_LightSteelBlue" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono:"
+                android:id="@+id/textView32"
+                android:layout_column="0"
+                android:gravity="right"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/WS_Telf"
+                android:layout_column="2"
+                android:background="@color/color_LightSteelBlue" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

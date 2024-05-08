@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KSSConsumirWS_Rest</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="username">Username :</string>
+    <string name="password">Password :</string>
+    <string name="user_details">User Details</string>
+    <string name="firstname">First Name:</string>
+    <string name="lastname">Last Name:</string>
+    <string name="title_activity_create_user">CreateUserActivity</string>
+    <string name="create_user_account">Create User Account</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_user_details">UserDetailsActivity</string>
+    <string name="title_activity_dept">DeptActivity</string>
+    <string name="title_activity_item_menu__detalle">ItemMenu_Detalle</string>
+    <string name="title_activity_item_menu_buscar">ItemMenu_buscar</string>
+    <string name="title_activity_clientes">Clientes</string>
+    <string name="title_activity_clientes_detalle">ClientesDetalle</string>
+</resources>

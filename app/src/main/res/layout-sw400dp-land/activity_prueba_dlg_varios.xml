@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#0099FF"
+android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:text="Opciones pedido"
+                android:id="@+id/btnOpcPedidos"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="4" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:text="Opciones Mesa"
+                android:id="@+id/btnOpc_Mesas"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="5" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:text="Devoluciones"
+                android:id="@+id/btnDevol"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="6" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:text="Cantidad Items"
+                android:id="@+id/btncanti"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="7" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="cliente"
+                android:id="@+id/btnCliente"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="8" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Buscar:"
+                android:id="@+id/btnBuscar"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Buscar Items"
+                android:id="@+id/btnItems"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="4" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="72dp"
+                android:text="Contraseña"
+                android:id="@+id/btnPass"
+                android:layout_alignLeft="@+id/btnAlertcontacto"
+                android:layout_alignStart="@+id/btnAlertcontacto"
+                android:layout_column="5" />
+
+            <Button
+                android:id="@+id/btnMostrarDLG2"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Mostrar dialog 2"
+                android:layout_column="6"
+                android:layout_marginTop="0dp" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Mostrar Boton 1"
+                android:id="@+id/btnMostrarDLG1"
+                android:layout_column="7"
+                android:layout_marginTop="0dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBuscar"
+                android:layout_column="9"
+                android:hint="Indique busqueda"
+                android:capitalize="words" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lstresult"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_column="5"
+        android:layout_span="3" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lblRegistros"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#cbdc36"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/lblItemSelected"
+        android:textSize="20sp"
+        android:background="#fff000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="169dp" />
+
+</LinearLayout>

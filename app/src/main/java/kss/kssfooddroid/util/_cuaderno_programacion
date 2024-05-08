@@ -1,0 +1,29 @@
+1.- Tamaños Pantallas:
+    ==============================================
+    ->Para Calcularlos pixeles de un objeto:
+        px = dp * (dpi / 160)
+
+    ->Desnsidades:
+        ldpi (low) ~120dpi
+        mdpi (medium) ~160dpi
+        hdpi (high) ~240dpi
+        xhdpi (extra-high) ~320dpi
+        xxhdpi (extra-extra-high) ~480dpi
+        xxxhdpi (extra-extra-extra-high) ~640dpi
+
+    ->Tamaños Generalizados:
+        xlarge screens are at least 960dp x 720dp
+        large screens are at least 640dp x 480dp
+        normal screens are at least 470dp x 320dp
+        small screens are at least 426dp x 320dp
+
+    ->To create alternative bitmap drawables for different densities, you should follow the 3:4:6:8:12:16 scaling ratio between the six generalized densities. For example, if you have a bitmap drawable that's 48x48 pixels for medium-density screens, all the different sizes should be:
+        36x36 (0.75x) for low-density
+        48x48 (1.0x baseline) for medium-density
+        72x72 (1.5x) for high-density
+        96x96 (2.0x) for extra-high-density
+        180x180 (3.0x) for extra-extra-high-density
+        192x192 (4.0x) for extra-extra-extra-high-density (launcher icon only; see note above)
+    ==============================================
+
+2.-

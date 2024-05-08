@@ -1,0 +1,424 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kss.kssfooddroid.pedido_cuenta1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="600dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@color/color_Blanco"
+        android:weightSum="1"
+        android:id="@+id/linear2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Blanco"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:id="@+id/linear1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="j-00000000-0"
+                    android:id="@+id/pedidoCuenta_EmpresaRIF"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="empresa demo"
+                    android:id="@+id/pedidoCuenta_EmpresaNombre"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="local #1, piso pb, cc el mismo"
+                    android:id="@+id/pedidoCuenta_EmpresaDireccion1"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="caracas-venezuela"
+                    android:id="@+id/pedidoCuenta_EmpresaDireccion2"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="telf: 0212-5555555"
+                    android:id="@+id/pedidoCuenta_EmpresaTelefono"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:paddingLeft="5dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:collapseColumns="2">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/table2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/kssCIF_RIF"
+                        android:id="@+id/textView20"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Negro"
+                        android:layout_column="0"
+                        android:textAlignment="gravity"
+                        android:gravity="fill"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/pedidoCuenta_CIRIF"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Blanco"
+                        android:layout_column="1"
+                        android:textAlignment="gravity"
+                        android:gravity="center|center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/kssNombreCliente"
+                        android:id="@+id/textView21"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Negro"
+                        android:layout_column="0"
+                        android:textAlignment="gravity"
+                        android:gravity="left"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/pedidoCuenta_NombreCliente"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Blanco"
+                        android:layout_column="1"
+                        android:textAlignment="gravity"
+                        android:gravity="center|center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/kssDireccion"
+                        android:id="@+id/textView22"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Negro"
+                        android:layout_column="0"
+                        android:textAlignment="gravity"
+                        android:gravity="left"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/pedidoCuenta_Direccion"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Blanco"
+                        android:layout_column="1"
+                        android:textAlignment="gravity"
+                        android:gravity="center|center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/ksstelefono"
+                        android:id="@+id/textView23"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Negro"
+                        android:layout_column="0"
+                        android:textAlignment="gravity"
+                        android:gravity="left"
+                        android:paddingTop="5dp" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/pedidoCuenta_telefono"
+                        android:layout_gravity="center_horizontal|left"
+                        android:textAllCaps="true"
+                        android:textSize="15sp"
+                        android:textColor="@color/color_Blanco"
+                        android:layout_column="1"
+                        android:textAlignment="gravity"
+                        android:gravity="center|center_vertical"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:collapseColumns="2" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/tableRow"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Fecha:"
+                    android:id="@+id/textView28"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro"
+                    android:layout_column="0"
+                    android:textAlignment="gravity"
+                    android:gravity="fill"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/pedidoCuenta_fecha"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro"
+                    android:layout_column="1"
+                    android:textAlignment="gravity"
+                    android:gravity="center|center_vertical"
+                    android:textStyle="italic"
+                    android:text="01-01-2015"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView30"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro"
+                    android:layout_column="3"
+                    android:textAlignment="gravity"
+                    android:gravity="center|center_vertical"
+                    android:text="pedido:"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/pedidoCuenta_Numpedido"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_Negro"
+                    android:layout_column="4"
+                    android:textAlignment="gravity"
+                    android:gravity="center|center_vertical"
+                    android:textStyle="italic"
+                    android:text="1234567880"
+                    android:layout_marginLeft="5dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|top"
+                android:weightSum="1">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/gridView"
+                    android:layout_weight="0.99" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="left|top"
+                        android:background="@color/color_GrisClaro"
+                        android:gravity="center|right"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/kssTotal"
+                            android:id="@+id/textView16"
+                            android:textAllCaps="true"
+                            android:textSize="30dp"
+                            android:textColor="@color/color_Negro"
+                            android:layout_column="0"
+                            android:textAlignment="gravity"
+                            android:gravity="fill" />
+
+                        <TextView
+                            android:layout_width="400dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="1.000.000,00"
+                            android:id="@+id/textView17"
+                            android:textAllCaps="true"
+                            android:textSize="40dp"
+                            android:textColor="@color/color_Negro"
+                            android:layout_column="0"
+                            android:textAlignment="gravity"
+                            android:textStyle="bold"
+                            android:gravity="center|right" />
+                    </TableRow>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/kssGraciasVisitarnos"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_horizontal|top"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/color_Rojo"
+                android:layout_column="0"
+                android:textAlignment="gravity"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

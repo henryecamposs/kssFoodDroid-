@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="kss_theme.FoodDroid" parent="@android:style/Theme.Holo">
+        <item name="android:editTextColor">@color/color_Negro</item>
+        <item name="android:editTextBackground">@color/color_Smoke</item>
+
+        <!-- NumberPicker -->
+
+        <!-- Custom Dialog -->
+        <item name="android:alertDialogStyle">@style/kss_theme.FoodDroid.Dialog</item>
+        <item name="android:dialogTheme">@style/kss_theme.FoodDroid.Dialog</item>
+    </style>
+
+    <!-- Variant of the holographic (dark) theme with no action bar. -->
+    <style name="kss_theme.FoodDroid.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="kss_theme.FoodDroid.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="kss_theme.FoodDroid.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="@android:background">@color/color_Gris</item>
+        <item name="@android:textColor">@color/color_Azul</item>
+        <item name="android:bottomBright">@color/color_Gris</item>
+        <item name="android:bottomDark">@color/color_Gris</item>
+        <item name="android:bottomMedium">@color/color_Gris</item>
+        <item name="android:centerBright">@color/color_Gris</item>
+        <item name="android:centerDark">@color/color_Gris</item>
+        <item name="android:centerMedium">@color/color_Gris</item>
+        <item name="android:fullBright">@color/color_Azul</item>
+        <item name="android:fullDark">@color/color_Azul</item>
+        <item name="android:topBright">@color/color_Azul</item>
+        <item name="android:topDark">@color/color_Azul</item>
+    </style>
+
+
+
+</resources>

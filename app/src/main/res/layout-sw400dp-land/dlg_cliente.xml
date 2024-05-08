@@ -1,0 +1,367 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_LightSteelBlue"
+    android:padding="15dp"
+    android:weightSum="1"
+    android:minWidth="500dp"
+    android:touchscreenBlocksFocus="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Buscar:"
+            android:id="@+id/textView"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_Negro"
+            android:layout_marginRight="10dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kssporRIFCI"
+                android:id="@+id/rdClientePorRIF"
+                style="@style/kss_widget.OptionButton"
+                android:checked="true"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_Rojo"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kssPorNombre"
+                android:id="@+id/rdClientePorNombre"
+                style="@style/kss_widget.OptionButton"
+                android:checked="false"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_Rojo"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnbuscarCliente_dlgCliente"
+            android:layout_column="6"
+            android:background="@drawable/btn_buscar"
+            android:imeOptions="normal"
+            android:focusable="true" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:id="@+id/imagebtnAdd_cliente"
+            android:src="@drawable/btn_circ_plusa"
+            android:layout_gravity="right"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBuscar_Cliente"
+        android:hint="@string/kssIndiqueCI_RIF"
+        android:textAllCaps="false"
+        android:elegantTextHeight="false"
+        style="@style/Kss_TextAparence.txtInput_Negro"
+        android:dropDownWidth="fill_parent"
+        android:fadeScrollbars="false"
+        android:dropDownHeight="wrap_content"
+        android:dropDownSelector="@color/ItemPedidoSelected"
+        android:inputType="textCapCharacters|textAutoComplete"
+        android:maxLines="1"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:imeOptions="actionDone" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Smoke"
+        android:orientation="horizontal"
+        android:id="@+id/tblClienteAdd_Cliente"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssCIF_RIF"
+                android:id="@+id/textView6"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="20sp"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtCIRIF_Cliente"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:textColor="@color/color_Azul"
+                android:textSize="30sp"
+                android:hint="@string/kssIndiqueCI_RIF"
+                android:singleLine="true"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssNombreCliente"
+                android:id="@+id/textView12"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="20sp"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNombreCliente__Cliente"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textColor="@color/color_Azul"
+                android:textSize="30sp"
+                android:hint="@string/kssIndiqueNombre_RazonSocial"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssDireccion"
+                android:id="@+id/textView14"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="20sp"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtDireccion_Cliente"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:textColor="@color/color_Azul"
+                android:textSize="30sp"
+                android:hint="@string/kssIndiqueDireccion"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/ksstelefono"
+                android:id="@+id/textView11"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:textSize="20sp"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtTelefeono_Cliente"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:textColor="@color/color_Azul"
+                android:textSize="30sp"
+                android:hint="@string/kssIndiqueNumeroTelefono"
+                android:singleLine="true"
+                android:phoneNumber="true"
+                android:textAllCaps="false" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tblClienteEnc_Cliente"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/tblCliente">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssCIF_RIF"
+                android:id="@+id/txtClienteNombre"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblCIRIF_Cliente"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueCI_RIF"
+                android:textAllCaps="false"
+                android:text=" "
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Azul" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/Kss_TextAparence.Titulo_Negro">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssNombreCliente"
+                android:id="@+id/textView5"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblNombreCliente_Cliente"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueNombre_RazonSocial"
+                android:singleLine="false"
+                android:textAllCaps="false"
+                android:text=" "
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Azul" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/kssDireccion"
+                android:id="@+id/textView8"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblDireccion_Cliente"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueDireccion"
+                android:textAllCaps="false"
+                android:text=" "
+                android:textAlignment="textStart"
+                style="@style/Kss_TextAparence.Titulo_Azul" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:id="@+id/llBtns">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnOK_Cliente"
+            android:background="@drawable/btn_ok_v"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnCancel_Cliente"
+            android:background="@drawable/btn_cancel_r"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="100dp" />
+    </LinearLayout>
+
+    </LinearLayout>

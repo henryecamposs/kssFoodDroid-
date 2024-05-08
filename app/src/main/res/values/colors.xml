@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_LightSteelBlue">#ffccd5ff</color>
+    <color name="color_SteelBlue">#ff6b78c6</color>
+    <color name="color_Rojo">#FFFF0000</color>
+    <color name="color_Naranja">#FFFFBD00</color>
+    <color name="color_NaranjaClaro">#FFFFD459</color>
+    <color name="color_Negro">#000</color>
+    <color name="color_Smoke">#FFF0F0F0</color>
+    <color name="color_Azul">#FF0000FF</color>
+    <color name="color_Lima">#FF00FF1B</color>
+    <color name="color_Verde">#ff00770c</color>
+    <color name="color_Blanco">#FFFFFFFF</color>
+    <color name="color_Pastel_verde">#FFA2FF8A</color>
+    <color name="color_Pastel_verdeClaro">#ffd9ffd2</color>
+    <color name="color_Gris">#66000000</color>
+    <color name="color_GrisClaro">#ffcdcdcd</color>
+    <color name="color_AmarilloClaro">#FFFDFFC6</color>
+    <color name="color_Amarillo">#FFFFF000</color>
+    <color name="color_Purpura">#FFFA09DD</color>
+    <color name="black_overlay">#000</color>
+    <color name="ItemPedidoSelected">#FF0000FF</color>
+    <color name="ItemPedidoActivated">#FFA2FF8A</color>
+    <color name="ItemPedidoPreseed">#FFFFBD00</color>
+
+ <!-- Colores Tema FoodDroid-->
+    <color name="editTextColor">@color/color_Negro</color>
+    <color name="editTextBackground">@color/color_Smoke</color>
+
+</resources>

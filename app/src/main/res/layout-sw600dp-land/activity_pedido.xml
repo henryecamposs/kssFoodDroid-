@@ -1,0 +1,381 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@color/color_Negro">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:minHeight="400dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center|center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:weightSum="1"
+                android:id="@+id/linItems"
+                android:background="@color/color_Negro"
+                android:gravity="center_vertical">
+
+                <GridView
+                    android:layout_width="@dimen/kssPedido_ListItemsMenu_Width"
+                    android:layout_height="@dimen/kssPedido_ListItemsMenu_Height"
+                    android:id="@+id/grdviewItemsMenu"
+                    android:numColumns="4"
+                    android:background="@color/color_Blanco"
+                    android:padding="5dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:choiceMode="singleChoice"
+                    android:gravity="center_horizontal|top"
+                    android:horizontalSpacing="5dp"
+                    android:columnWidth="120dp"
+                    android:layout_margin="5dp" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/kssPedidoListItem_BottomMenu_Height"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/btnIMenuGrupos_Pedido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:width="@dimen/kss_btnAmbientes_Width"
+                            android:height="@dimen/kss_btnAmbientes_Height"
+                            android:textAllCaps="false"
+                            android:tag="6"
+                            android:drawableTop="@drawable/btn_circ_anterior"
+                            android:focusableInTouchMode="true"
+                            android:background="@color/color_Negro"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="left" />
+
+                        <Button
+                            android:id="@+id/btnIMenuBuscar_Pedido"
+                            android:layout_width="@dimen/kssPedido_ItemsMenu_btnBottom_Width"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:width="@dimen/kss_btnAmbientes_Width"
+                            android:height="@dimen/kss_btnAmbientes_Height"
+                            android:background="@drawable/btn_azul_u"
+                            android:textAllCaps="false"
+                            android:tag="6"
+                            android:drawableTop="@drawable/btn_buscar"
+                            android:layout_marginRight="5dp" />
+
+                        <Button
+                            android:id="@+id/btnCliente_Pedido"
+                            android:layout_width="@dimen/kssPedido_ItemsMenu_btnBottom_Width"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="0"
+                            android:width="@dimen/kss_btnAmbientes_Width"
+                            android:height="@dimen/kss_btnAmbientes_Height"
+                            android:background="@drawable/btn_azul_u"
+                            android:textAllCaps="false"
+                            android:tag="6"
+                            android:drawableTop="@drawable/btn_cliente"
+                            android:layout_marginRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cliente"
+                            android:id="@+id/lblCliente_pedido"
+                            android:layout_margin="5dp"
+                            android:textSize="14dp"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:visibility="visible"
+                            android:layout_weight="2.96"
+                            android:textColor="@color/color_Smoke" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgbtnHelp_Pedido"
+                        android:src="@drawable/btn_circ_help"
+                        android:background="@color/color_Negro"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="5dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:background="@color/color_Negro"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kssPedidoListItem_TopMenu_Height"
+                    android:gravity="center"
+                    android:id="@+id/layoutBotonesItemPedido">
+
+                    <Button
+                        android:id="@+id/btnItemCantidad_Pedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:background="@drawable/btn_azul_u"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:tag="6"
+                        android:drawableTop="@drawable/btn_circ_plusa"
+                        android:clickable="true" />
+
+                    <Button
+                        android:id="@+id/btnItemEliminar_Pedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:background="@drawable/btn_azul_u"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:tag="5"
+                        android:drawableTop="@drawable/btn_circ_minusa"
+                        android:clickable="true" />
+
+                    <Button
+                        android:id="@+id/btnItemExtra_Pedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:background="@drawable/btn_azul_u"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:tag="4"
+                        android:drawableTop="@drawable/btn_plus_a"
+                        android:clickable="true" />
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/lvPedido"
+                    android:choiceMode="singleChoice"
+                    android:layout_weight="0.69"
+                    android:dividerHeight="1dp"
+                    android:stackFromBottom="true" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btnUplstpedido_pedido"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:layout_margin="0dp"
+                        android:textAlignment="gravity"
+                        android:gravity="center_horizontal|top"
+                        android:drawableTop="@drawable/btn_circupa"
+                        android:background="@color/color_Negro"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="3dp"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/btnDownlstpedido_pedido"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:layout_margin="0dp"
+                        android:textAlignment="gravity"
+                        android:gravity="center_horizontal|top"
+                        android:drawableTop="@drawable/btn_circdowna"
+                        android:background="@color/color_Negro"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="3dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/kssTotalPedido_label"
+                        android:id="@+id/textView3"
+                        android:layout_gravity="center|right"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_Blanco"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="999.000,00"
+                        android:id="@+id/lblTotal_Pedido"
+                        android:layout_gravity="center_vertical|right"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:paddingRight="10dp"
+                        android:typeface="normal"
+                        android:phoneNumber="false"
+                        android:numeric="decimal"
+                        android:textColor="@color/color_Blanco"
+                        android:textAlignment="gravity"
+                        android:gravity="right" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_Smoke"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <Button
+                    android:id="@+id/btnMenu_Pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:width="@dimen/kss_btnAmbientes_Width"
+                    android:height="@dimen/kss_btnAmbientes_Height"
+                    android:textColor="@color/color_Negro"
+                    android:background="@drawable/btn_azul_u"
+                    android:layout_margin="0dp"
+                    android:drawableTop="@drawable/btn_mnu"
+                    android:textAlignment="gravity"
+                    android:gravity="center_horizontal|top"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Kss_TextAparence.txtInput_Rojo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00 am"
+                        android:id="@+id/lblHora_pedido"
+                        android:layout_margin="5dp"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/ksslogo_banner1"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="right|center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/btnAtras_Pedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:width="@dimen/kss_btnAmbientes_Width"
+                        android:height="@dimen/kss_btnAmbientes_Height"
+                        android:background="@drawable/btn_azul_u"
+                        android:textAllCaps="true"
+                        android:tag="6"
+                        android:drawableLeft="@drawable/btn_mesa_in"
+                        android:text="mesa 01"
+                        android:textColor="@color/color_Smoke"
+                        android:textAlignment="gravity"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        style="@style/Kss_TextAparence.txtInput_Rojo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emplado1"
+                        android:id="@+id/lblEmpleado_Pedido"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

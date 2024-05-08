@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_LightSteelBlue"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MESA 01"
+            android:id="@+id/lblmesa_opcPedido"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/color_Smoke"
+            style="@style/Kss_TextAparence.txtInput_Rojo"
+            android:textSize="30sp"
+            android:padding="2dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnImprCuenta_opcPedido"
+            android:text="@string/kssImprimirComanda"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:drawableLeft="@drawable/btn_printcomanda"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnVerCuenta_opcPedido"
+            android:text="@string/kssMostrarCuenta"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:drawableLeft="@drawable/btn_cuenta"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCliente_opcPedido"
+            android:text="@string/kssCliente"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:drawableLeft="@drawable/btn_cliente"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOpciones_opcPedido"
+            android:text="@string/kssOpciones"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:drawableLeft="@drawable/btn_config_p"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:drawablePadding="10dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbtnCancel_opcPedido"
+        android:layout_gravity="right"
+        android:background="@drawable/btn_cancel_r" />
+
+</LinearLayout>

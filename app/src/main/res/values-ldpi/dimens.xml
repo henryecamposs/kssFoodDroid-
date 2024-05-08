@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">7.5dp</dimen>
+    <dimen name="activity_vertical_margin">7.5dp</dimen>
+    <dimen name="kss_btnOpciones_Width">90dp</dimen>
+    <dimen name="kss_btnOpciones_Height">75dp</dimen>
+    <dimen name="kss_btnMesas_Width">105dp</dimen>
+    <dimen name="kss_btnMesas_Height">63.75dp</dimen>
+    <dimen name="kss_btnAmbientes_Width">105dp</dimen>
+    <dimen name="kss_btnAmbientes_Height">63.75dp</dimen>
+    <dimen name="kss_btnItemMenu_Width">120dp</dimen>
+    <dimen name="kss_btnItemMenu_Height">127dp</dimen>
+    <dimen name="kss_btnImgOvalado_Width">112.5dp</dimen>
+    <dimen name="kss_btnImgOvalado_Height">45dp</dimen>
+    <dimen name="kssPedidoListItems_Height">382.5dp</dimen>
+    <dimen name="kssPedidoListItem_BottomMenu_Height">52.5dp</dimen>
+    <dimen name="kssPedidoListItem_TopMenu_Height">52.5dp</dimen>
+    <dimen name="kssPedido_ListItemsMenu_Height">435dp</dimen>
+    <dimen name="kssPedido_ListItemsMenu_Width">525dp</dimen>
+    <dimen name="kssPedido_ItemsMenu_btnBottom_Width">90dp</dimen>
+    <dimen name="kssbtnHelp_width">52.5dp</dimen>
+    <dimen name="kssbtnHelp_Height">30dp</dimen>
+    <dimen name="kssDialogosFragment_width">300dp</dimen>
+    <dimen name="kssMargenInterno_Padre">15dp</dimen>
+
+</resources>

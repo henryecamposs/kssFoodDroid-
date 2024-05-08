@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Estilo de Texto-->
+
+    <style name="Kss_TextAparence" parent="@android:style/TextAppearance.Holo"></style>
+
+    <style name="Kss_TextAparence.Dialog">
+        <!-- Set text size and color of title and message here -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="Kss_TextAparence.WindowsTitulo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/kss_shape_redondeado_gris</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_Smoke</item>
+    </style>
+
+    <style name="Kss_TextAparence.Widget">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_Smoke</item>
+    </style>
+
+    <!--Estilos personalizados para los componentes del formulario-->
+    <style name="Kss_TextAparence.Header" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/color_Azul</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="Kss_TextAparence.Message" >
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Kss_TextAparence.LabelTxt">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textSize">12pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="Kss_TextAparence.Titulo_Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.Titulo_Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.Titulo_Negro">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput_Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput_Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput_Negro">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.lstItemsNegro">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="Kss_TextAparence.lstItemsNegro.sub">
+        <item name="android:textColor">@color/color_Smoke</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+
+    <!-- Estilos de Widgets-->
+
+    <style name="kss_widget" parent="@android:style/Widget.Holo">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <style name="kss_widget.ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="kss_widget.Separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/holo_blue_bright</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+
+    <style name="kss_widget.NumPicker">
+        <item name="android:background">@drawable/kss_boton_redondeado</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+        <item name="android:solidColor">@color/color_Azul</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="kss_widget.FrameRedondo">
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/kss_shape_redondeado_gris</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="kss_widget.OptionButton">
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/kss_shape_redondeado_gris</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+</resources>

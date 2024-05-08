@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_LightSteelBlue"
+    android:padding="15dp"
+    android:weightSum="1"
+    android:minWidth="500dp"
+    android:touchscreenBlocksFocus="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar Item:"
+            android:id="@+id/textView"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:textColor="@color/color_Negro" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/txtBuscarItem_IMenuBuscar"
+            android:textSize="30sp"
+            android:hint="@string/kssIndicarItemMenu"
+            style="@style/Kss_TextAparence.txtInput_Rojo"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnBuscarItem_IMenuBuscar"
+            android:src="@drawable/btn_buscar"
+            android:scaleType="fitCenter"
+            android:background="@color/color_Pastel_verde" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/tblIMenuEnc_IMenuBuscar">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Producto:"
+                android:id="@+id/txtClienteNombre"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                style="@style/Kss_TextAparence.Titulo_Negro"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblProducto_IMenuBuscar"
+                android:layout_row="0"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueCI_RIF"
+                android:text="polllo asado brasa 5 personas"
+                android:textAllCaps="true"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="P.V. Justo:"
+                android:id="@+id/textView8"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblPrecio_IMenuBuscar"
+                android:layout_row="3"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueDireccion"
+                android:text="90.000,00"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="IVA:"
+                android:id="@+id/textView19"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblIVA_IMenuBuscar"
+                android:layout_row="5"
+                android:textSize="30sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueDireccion"
+                android:text="10,00"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_column="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL:"
+                android:id="@+id/textView25"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:textSize="30sp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lblTotal_IMenuBuscar"
+                android:layout_row="6"
+                android:textSize="40sp"
+                android:textColor="@color/color_Azul"
+                android:textStyle="bold"
+                android:hint="@string/kssIndiqueDireccion"
+                android:text="100.000,00"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnOK_IMenuBuscar"
+            android:background="@drawable/btn_ok_v"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnCancel_IMenuBuscar"
+            android:background="@drawable/btn_cancel_r"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

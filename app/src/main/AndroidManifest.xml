@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kss.kssfooddroid" >
+
+    <uses-sdk
+        android:maxSdkVersion="21"
+        android:minSdkVersion="13" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+    <supports-screens android:requiresSmallestWidthDp="400" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".mesas"
+            android:label="Módulo de Ambientes"
+            android:theme="@style/AppTheme"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".config"
+            android:label="Módulo Config" >
+        </activity>
+        <activity
+            android:name=".pedido"
+            android:label="Módulo Pedido"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".contacto"
+            android:label="Módulo Contactos" >
+        </activity>
+        <activity
+            android:name=".prueba_DlgContacto"
+            android:label="prueba" >
+        </activity>
+        <activity
+            android:name=".prueba_DlgVarios"
+            android:label="Varios" >
+        </activity>
+        <activity
+            android:name=".WSGrid"
+            android:label="@string/title_activity_wsgrid" >
+        </activity>
+        <activity
+            android:name=".WifiTester"
+            android:label="@string/title_activity_wifi_tester" >
+        </activity>
+    </application>
+
+</manifest>

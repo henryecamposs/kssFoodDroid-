@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_LightSteelBlue"
+    android:padding="15dp"
+    android:weightSum="1"
+    android:touchscreenBlocksFocus="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Smoke"
+        android:gravity="center"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="05-refresco colita"
+            android:id="@+id/lblProducto_canti"
+            android:layout_gravity="center"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:paddingLeft="5dp"
+            style="@style/Kss_TextAparence.Titulo_Azul" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_Smoke"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kssCantidad"
+                android:id="@+id/textView13"
+                android:textSize="30sp"
+                style="@style/Kss_TextAparence.Titulo_Negro" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/npickCantidad_canti"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:touchscreenBlocksFocus="true"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                style="@style/kss_widget.NumPicker">
+
+            </NumberPicker>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnOK_canti"
+            android:background="@drawable/btn_ok_v"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtnCancel_canti"
+            android:background="@drawable/btn_cancel_r"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="100dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
